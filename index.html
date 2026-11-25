@@ -73,6 +73,12 @@ h2{background:linear-gradient(90deg,var(--g1),var(--g3));-webkit-background-clip
 .mode.r{background:linear-gradient(135deg,#5b3df5,#00b3e6)}.mode.o{background:linear-gradient(135deg,#ff5fa2,#ff9a5f)}
 .mode h3{margin:0 0 6px}.mode p{margin:0;opacity:.95;font-size:15px}
 @media(max-width:700px){.heroin{grid-template-columns:1fr}.pic{order:-1;width:160px;height:160px;font-size:54px}}
+.more{margin-top:36px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 20px}
+.more summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;padding:14px 0;font-size:22px;font-weight:700;color:var(--text)}
+.more summary::-webkit-details-marker{display:none}
+.more .chev{color:var(--acc);transition:transform .2s}
+.more[open] .chev{transform:rotate(180deg)}
+.more .tags{padding:4px 0 16px}
 </style>
 </head>
 <body>
@@ -81,7 +87,7 @@ h2{background:linear-gradient(90deg,var(--g1),var(--g3));-webkit-background-clip
 <header class="hero"><div class="wrap heroin"><div>
 <div class="eyebrow">Senior Android Developer</div>
 <h1>I build fast, reliable Android apps that ship to Google Play.</h1>
-<p class="lead">Android Developer with 4+ years of experience building scalable, high-performance mobile applications using Kotlin, Java, MVVM, and Jetpack Compose. Experienced in Firebase, AWS, AdMob, API integration, and real-time device communication, with a strong focus on clean architecture, performance optimization, and exceptional user experiences.</p>
+<p class="lead">Android Developer with 5+ years of experience building scalable, high-performance mobile applications using Kotlin, Java, MVVM, and Jetpack Compose. Experienced in Firebase, AWS, AdMob, API integration, and real-time device communication, with a strong focus on clean architecture, performance optimization, and exceptional user experiences.</p>
 <div class="btns">
 <a class="btn p" href="#apps">View my apps</a>
 <a class="btn" href="mailto:basitzawar@gmail.com">Email me</a>
@@ -89,7 +95,7 @@ h2{background:linear-gradient(90deg,var(--g1),var(--g3));-webkit-background-clip
 <a class="btn" href="https://linkedin.com/in/basit-zawar-55a47820b" target="_blank" rel="noopener">LinkedIn</a>
 </div>
 <div class="stats">
-<div class="stat"><b>4+</b><span>Years of experience</span></div>
+<div class="stat"><b>5+</b><span>Years of experience</span></div>
 <div class="stat"><b>50+</b><span>Apps built</span></div>
 <div class="stat"><b>Kotlin</b><span>Primary language</span></div>
 </div>
@@ -113,31 +119,39 @@ h2{background:linear-gradient(90deg,var(--g1),var(--g3));-webkit-background-clip
 </article>
 
 <article class="card">
+<div class="top"><div class="ic">EM</div><div><h3>Emoji Maker: Emoji Creator</h3><span class="tag ok">1M+ downloads · 4.3★</span></div></div>
+<p>An emoji creator that lets users design their own custom emojis and share them in chats and social apps, with a simple, playful interface.</p>
+<div class="tags"><span class="tag">Kotlin</span><span class="tag">Custom graphics</span><span class="tag">AdMob</span></div>
+</article>
+
+<article class="card">
 <div class="top"><div class="ic">DT</div><div><h3>Switch Mobile, Phone Clone App</h3></div></div>
 <p>Peer-to-peer file sharing between Android phones with no internet needed. QR-based pairing, live progress tracking, and reliable transfer of large files over TCP/IP sockets.</p>
 <div class="tags"><span class="tag">Kotlin</span><span class="tag">TCP/IP Sockets</span><span class="tag">QR Pairing</span></div>
-<a href="https://play.google.com/store/apps/details?id=com.smartswitch.phonetransfer.phoneclone.datatransfer.copymydata.newphone" target="_blank" rel="noopener">View on Google Play →</a>
 </article>
 
 <article class="card">
 <div class="top"><div class="ic">CS</div><div><h3>Cloud Storage</h3></div></div>
 <p>Secure file storage built with AWS Amplify, using Amazon Cognito for authentication and S3 for storage, with managed access permissions, upload and download progress, and error handling.</p>
 <div class="tags"><span class="tag">AWS Amplify</span><span class="tag">S3</span><span class="tag">Cognito</span></div>
-<a href="https://play.google.com/store/apps/details?id=com.cloudstorage.backupapp.storagespace.mycloud.clouldbackup" target="_blank" rel="noopener">View on Google Play →</a>
 </article>
 
 <article class="card">
 <div class="top"><div class="ic">QR</div><div><h3>QR Code Scanner</h3></div></div>
 <p>Real-time QR and barcode scanning using CameraX and ZXing, plus generation of custom QR codes for text, URLs and contacts, in a Material Design 3 interface.</p>
 <div class="tags"><span class="tag">CameraX</span><span class="tag">ZXing</span><span class="tag">Material 3</span></div>
-<a href="https://play.google.com/store/apps/details?id=com.qr.code.reader.barcode.scanner.qr.scan" target="_blank" rel="noopener">View on Google Play →</a>
 </article>
 
 <article class="card">
 <div class="top"><div class="ic">CD</div><div><h3>Cloud Drive &amp; Backup Storage</h3></div></div>
 <p>A secure cloud drive to store and back up photos, videos, documents, audio and contacts, with folders, a recycle bin for recovering deleted files and a storage usage view. 1K+ downloads on Google Play.</p>
 <div class="tags"><span class="tag">Kotlin</span><span class="tag">MVVM</span><span class="tag">Cloud storage</span><span class="tag">AdMob</span></div>
-<a href="https://play.google.com/store/apps/details?id=com.kinglets.clouddrive.backupstorage.cloudvaultfile" target="_blank" rel="noopener">View on Google Play →</a>
+</article>
+
+<article class="card">
+<div class="top"><div class="ic">CV</div><div><h3>CV Maker: Resume Builder App</h3></div></div>
+<p>A resume and CV builder that helps users create professional, ready-to-share resumes from clean templates, entering their details, experience, education and skills step by step, then exporting to PDF.</p>
+<div class="tags"><span class="tag">Kotlin</span><span class="tag">Templates</span><span class="tag">PDF export</span></div>
 </article>
 
 <article class="card">
@@ -147,11 +161,14 @@ h2{background:linear-gradient(90deg,var(--g1),var(--g3));-webkit-background-clip
 </article>
 
 </div>
-<h2 style="margin-top:36px">More apps I’ve built</h2>
+<details class="more">
+<summary><span>More apps I’ve built</span><span class="chev">▾</span></summary>
 <div class="tags">
 <span class="tag">Language Translator</span><span class="tag">Phone Cleaner</span><span class="tag">Video Downloader</span><span class="tag">Video Player</span>
 <span class="tag">Voice SMS</span><span class="tag">Smart Switch</span><span class="tag">Fake Audio/Video Call</span><span class="tag">QR &amp; Barcode Scanner</span>
+<span class="tag">Fingerprint Animation</span><span class="tag">Zip Screen Locker</span><span class="tag">GPS Camera</span><span class="tag">GPS Satellite Map</span><span class="tag">Screen Mirroring</span><span class="tag">iCalculator</span><span class="tag">Charging Animation</span><span class="tag">Phone Dialer</span><span class="tag">Nickname Generator</span><span class="tag">Name Styles</span><span class="tag">Stylish Text</span><span class="tag">Voice Lock</span><span class="tag">SMS Text Messenger</span><span class="tag">Find My Phone</span><span class="tag">Quick Share</span><span class="tag">Photo Editor &amp; Collage Maker</span><span class="tag">AI Study App</span><span class="tag">Funky Wallpaper</span><span class="tag">Image Compressor</span><span class="tag">Speechify: Text to Voice</span>
 </div>
+</details>
 </div></section>
 
 <section id="services"><div class="wrap">
@@ -185,7 +202,7 @@ h2{background:linear-gradient(90deg,var(--g1),var(--g3));-webkit-background-clip
 <div class="card"><h3>Architecture</h3><div class="tags"><span class="tag">MVVM</span><span class="tag">ViewModel</span><span class="tag">Dependency Injection</span><span class="tag">Navigation Component</span></div></div>
 <div class="card"><h3>Networking and devices</h3><div class="tags"><span class="tag">Retrofit</span><span class="tag">REST APIs</span><span class="tag">TCP/IP Sockets</span><span class="tag">ConnectSDK</span><span class="tag">CameraX</span><span class="tag">ZXing</span></div></div>
 <div class="card"><h3>Cloud and backend</h3><div class="tags"><span class="tag">Firebase Auth</span><span class="tag">AWS Amplify</span><span class="tag">Amazon S3</span><span class="tag">Cognito</span><span class="tag">DynamoDB</span></div></div>
-<div class="card"><h3>Monetization</h3><div class="tags"><span class="tag">Google AdMob</span><span class="tag">Ad Mediation</span></div></div>
+<div class="card"><h3>Monetization</h3><div class="tags"><span class="tag">Google AdMob</span><span class="tag">Ad Network Mediation</span></div></div>
 <div class="card"><h3>Tools</h3><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">GitLab</span><span class="tag">Bitbucket</span><span class="tag">Play Console</span></div></div>
 </div>
 </div></section>
@@ -193,9 +210,9 @@ h2{background:linear-gradient(90deg,var(--g1),var(--g3));-webkit-background-clip
 <section id="experience"><div class="wrap">
 <h2>Experience</h2>
 <div class="tl">
-<div class="job"><h3>Freelance Android Developer · Independent</h3><div class="m">Oct 2025 – Present · Remote and onsite</div>
+<div class="job"><h3>Senior Android Developer · Self-Employed</h3><div class="m">Oct 2025 – Present · Remote and onsite</div>
 <ul><li>Building and publishing Android apps for clients, from idea to Google Play.</li><li>Integrating AdMob, Firebase and AWS, and optimizing app performance.</li><li>Fixing bugs, updating existing apps and handling Play Console publishing.</li></ul></div>
-<div class="job"><h3>Senior Android Developer · MindByte Studios</h3><div class="m">Dec 2023 – Sep 2025 · Rawalpindi, Pakistan</div>
+<div class="job"><h3>Senior Android Developer (Team Lead) · MindByte Studios</h3><div class="m">Dec 2023 – Sep 2025 · Rawalpindi, Pakistan</div>
 <ul><li>Designed a secure cloud storage app with authentication and file access control.</li><li>Built a QR scanner and generator with real-time CameraX and ZXing scanning.</li><li>Developed a hybrid Smart TV remote (WiFi and IR) and a QR-paired data transfer app.</li></ul></div>
 <div class="job"><h3>Android Developer · Lads Technology</h3><div class="m">Feb 2021 – Nov 2023 · Rawalpindi, Pakistan</div>
 <ul><li>Built and published multiple Kotlin apps from scratch, including GPS Voice Navigation, QR and Barcode Scanner, Voice SMS, Smart Switch and Fake Audio/Video Call.</li><li>Integrated AdMob without disrupting the user experience.</li></ul></div>
